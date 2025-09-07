@@ -1,0 +1,18 @@
+# .streamlit/config.toml
+
+[server]
+headless = true
+enableCORS = false
+
+[embedding]
+# Set this to true to enable embedding
+enable = true
+
+# List of domains that are allowed to embed your app.
+# Add the URL of your deployed React app here. For local testing,
+# you can add your localhost address.
+allowedOrigins = [
+  "http://localhost:5173",  # Vite's default port
+  "http://localhost:3000",  # Create React App's default port
+  "https://stremlitweatherappgit-ohrfdjjx9uknyxof2iwchv.streamlit.app/" # <-- Add your final website URL here
+]
